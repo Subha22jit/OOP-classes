@@ -21,7 +21,8 @@ class SquareBox{
 ```
 
 
-#### Access Levels (*[Further reading](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)*):
+#### Access Levels (*[Further reading](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)*)
+
 | Modifier | Class | Package | Subclass | World |
 | :------- | :---: | :-----: | :------: | :---: |
 | `public` | Y | Y | Y | Y |
@@ -73,11 +74,15 @@ Class Box{
 }
 ```
 
+***
 
+### Lab Work
 
-### Lab Work:
-**Assignment 2 - from question 2 onwards**
+***Assignment 2** - from question 2 onwards*
 
-Completed: 
+Completed:
+
 - Write a program to find surface area and volume of Cylinder Using Constructors - Keyboard Input or Command Line Input. 
-[Code](../codes/Cylinder.java) 
+[Code](../codes/Cylinder.java)
+- Write a program to find surface area and volume of Cone Using Constructors - keyboard input or command line input.
+[Code](../codes/Cone.java)
