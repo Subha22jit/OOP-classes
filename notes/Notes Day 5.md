@@ -52,8 +52,8 @@ It has no return type, not even `void`
 
 ```java
 Class Box{
-    int w,h;
-    static int d;
+    int w,h; //Instance Variables
+    static int d; //Static Variable
 
     //constructor
     Box(){
