@@ -1,3 +1,11 @@
+class Test2 {
+    int data;
+    Test2(){
+        this.data = 1;
+    }
+}
+
+
 public class Test {
     int data;
     Test(int data){
@@ -24,11 +32,3 @@ public class Test {
         t1.showDetails2(t2);
     }
     }
-
-    class Test2 {
-        int data;
-        Test2(){
-            this.data = 1;
-        }
-    }
-    
