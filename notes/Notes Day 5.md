@@ -63,6 +63,7 @@ Class Box{
     }
 
     public static void main(String[] args){
+        // Creating object below
         Box bl = new Box();
         System.out.println(bl.w+" "+bl.h);
         System.out.println(bl.d);
