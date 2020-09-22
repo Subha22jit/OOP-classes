@@ -3,7 +3,7 @@
 ## Encapsulation
 
 It is a way of *hiding information*. The wrapping up of data and methods into a single unit is known as **Encapsulation**  
-Java class is the basis of encapsulation. Then though access specifier (there are 4 access specifiers **Public**, **Protected**, **Default**, **Private**) we can control the access of class information.
+Java class is the basis of encapsulation. Then though access specifier (there are 4 access specifiers **`public`**, **`protected`**, **`default`**, **`private`**) we can control the access of class information.
 ```java
 class Box{
     int w,h,d;
@@ -18,6 +18,17 @@ class SquareBox{
 }
 ```
 
+
+#### Access Levels (*[Further reading](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)*):
+| Modifier | Class | Package | Subclass | World |
+| :------- | :---: | :-----: | :------: | :---: |
+| `public` | Y | Y | Y | Y |
+| `protected` | Y | Y | Y | N |
+| `default` | Y | Y | N | N |
+| `private` | Y | N | N | N |
+
+
+
 ## Abstraction
 
 It is a way of *hiding implementation*. Both Abstraction and Encapsulation are used for hiding.  
@@ -29,3 +40,31 @@ It is a process by which one object acquires the properties of another object.
 ## Polymorphism
 
 It is a feature that allows one interface to be used for general class of actions, i.e one interface multiple methods. Ploymorphism is derived from two greek workds *Poly* and *Morph*. *Poly* means many and *Morph* means forms.
+
+
+
+## Constructors
+
+It is a special method. A constructor initializes the internal state of an object immediately upon creation. It has the same name as class name in which it resides.  
+Every class we create has a constructor provided by java compiler.  
+Constructors are called immediately and automatically once an object is created.  
+It has no return type, not even `void`
+
+```java
+Class Box{
+    int w,h;
+    static int d;
+
+    //constructor
+    Box(){
+        w=2;
+        h=3;
+        d=4;
+    }
+
+    public static void main(String[] args){
+        Box bl = new Box();
+        System.out.println(bl.w+" "+bl.h);
+        System.out.println(bl.d);
+    }
+}
