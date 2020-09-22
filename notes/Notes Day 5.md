@@ -86,3 +86,4 @@ Completed:
 [Code](../codes/Cylinder.java)
 - Write a program to find surface area and volume of Cone Using Constructors - keyboard input or command line input.
 [Code](../codes/Cone.java)
+- Create a class named Test, make method inside it and pass object as parameter of this method using (a) pass same class‟s object, (b) pass different class‟s object [Code](../codes/Test.java)
