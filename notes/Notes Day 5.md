@@ -71,3 +71,13 @@ Class Box{
         System.out.println(b1.d);
     }
 }
+```
+
+
+
+### Lab Work:
+**Assignment 2 - from question 2 onwards**
+
+Completed: 
+- Write a program to find surface area and volume of Cylinder Using Constructors - Keyboard Input or Command Line Input. 
+[Code](../codes/Cylinder.java) 
