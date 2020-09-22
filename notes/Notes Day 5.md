@@ -55,17 +55,17 @@ Class Box{
     int w,h; //Instance Variables
     static int d; //Static Variable
 
-    //constructor
+    //constructor - parameterless
     Box(){
         w=2;
         h=3;
         d=4;
     }
-
+    // execution begins here by default
     public static void main(String[] args){
         // Creating object below
-        Box bl = new Box();
-        System.out.println(bl.w+" "+bl.h);
-        System.out.println(bl.d);
+        Box b1 = new Box();
+        System.out.println(b1.w+" "+b1.h);
+        System.out.println(b1.d);
     }
 }
