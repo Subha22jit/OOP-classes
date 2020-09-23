@@ -10,7 +10,7 @@ If no constructor is provided, java compiler provides a default constructor whic
 
 #### Data types (*[further reading on data types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)*):
 | Data type | Default value |
-| :--: | :--: | :--: |
+| :-------: | :-----------: |
 | `byte` | 0 |
 | `short` | 0 |
 | `int` | 0 |
