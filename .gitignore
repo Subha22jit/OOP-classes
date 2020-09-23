@@ -1,5 +1,4 @@
 *.class
 *.exe
 *.c
-./codes/RefCheck.java
-./codes/Swap.java
+RefCheck.java
