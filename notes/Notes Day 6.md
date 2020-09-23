@@ -14,7 +14,7 @@ If no constructor is provided, java compiler provides a default constructor whic
 | `byte` | 0 |
 | `short` | 0 |
 | `int` | 0 |
-| `long` | 0 |
+| `long` | 0L |
 | `float` | 0.0f |
 | `double` | 0.0d |
 | `char` | '\u0000' |
@@ -27,3 +27,35 @@ If no constructor is provided, java compiler provides a default constructor whic
 - Default Constructor
 - no-arg Constructor (Parameterless constructor)
 - Parameterized Constructor
+
+
+## Variables
+
+There are three types of variables in java:
+1. local variables
+2. instance variables / *object variables*
+3. static variables / *class variables*
+
+### Local Variables
+
+Variables declared within methods, constructors, etc are called local variables.  
+In Java there is no garbage value concept, that's why we can't use local variable without initialization.
+
+### Instance variables
+
+Variables declared within class but outside of the body of any methods are called instance variables. It is not declared as `static`. It has one copy per object. Java compiler assign default value to the instance variables. These can be accessed only via an object - directly or indirectly.  
+Accessing directly: `new Box().w`;
+
+
+```java
+class Box{
+    int w; //Instance Var
+    static int h; // Static Var
+    public static void main(String[] args){
+        int d; // Local Var
+        System.out.println(d);  // ERROR: not initialized
+        System.out.println(h); 
+        System.out.println(new Box().w);
+    }
+}
+```
