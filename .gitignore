@@ -2,4 +2,4 @@
 *.exe
 *.c
 RefCheck.java
-./testing/*
+/codes/testing/*
