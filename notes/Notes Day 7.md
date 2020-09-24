@@ -79,23 +79,28 @@ java VarCheck
 ## Static and Instance Methods
 
 ```java
-public class DirCheck{
-    int a,b; // Instance variables
+public class DirCheck {
+    int a, b; // Instance variables
     static int c; // Static variable
-    void show(){ // Instance method
-        System.out.println(a+" "+b);
+
+    void show() { // Instance method
+        System.out.println(a + " " + b + " " + c);
         // Instance variable accessed diectly within instance method
+        showS(); // instance methods can access static methods and static variables
     }
-    static void show(){ // Static/Class Method
-        System.out.println(a+" "+b); // Illegal!
+
+    static void showS() { // Static/Class Method
+        // System.out.println(a + " " + b); // Illegal!
+        System.out.println("showS called");
         // Cannot access instance variable directly from static method
     }
+
     public static void main(String[] args) {
         DirCheck d = new DirCheck();
-        System.out.println(d.a+ " " + d.b);
-        System.out.println(d.c+ "=" + c); // Both will have same value as c is static var.
-        b.show(); // calling Instance method via Object Ref.
-        show(); // calling Static/Class method directly
+        System.out.println(d.a + " " + d.b); // Accessing object variables
+        System.out.println(d.c + "=" + c); // Both will have same value as c is static var.
+        showS(); // calling Static/Class method directly
+        d.show(); // calling Instance method via Object Ref.
     }
 }
 ```
@@ -103,3 +108,7 @@ public class DirCheck{
 **Static method** and **static variable** can be _called directly_.  
 **Instance methods** can access **instance variables** and **instance methods** _directly_.  
 **Static/Class methods** _cannot_ access **instance variables** and **instance methods** _directly_, that is, they _must be accessed_ via **object reference**.
+
+#### Why static methods can't acess instance variables and instance methods directly?
+
+#### Why main method is static?
