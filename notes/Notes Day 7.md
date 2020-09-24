@@ -22,13 +22,13 @@ class Box{
 
 ---
 
-`new` is used to allocate memory dynamically.  
+`new` is used to allocate memory dynamically.
 
 | Variable | Location |
-| :-: | :-: |
-| Local | Stack |
-| Instance | Heap |
-| Dynamic | Heap |
+| :------: | :------: |
+|  Local   |  Stack   |
+| Instance |   Heap   |
+| Dynamic  |   Heap   |
 
 ---
 
@@ -49,13 +49,17 @@ public class VarCheck {
     public static void main(String[] args) {
         VarCheck v1 = new VarCheck(1, 2, 3);
         VarCheck v2 = new VarCheck(4, 5, 6);
-        System.out.println(v1.a + " " + v1.b + " " + v1.c);
-        System.out.println(v2.a + " " + v2.b + " " + v2.c);
+        System.out.println(v1.a + " " + v1.b + " " + v1.c); 
+        // even c instead of v1.c will work as c is static
+        System.out.println(v2.a + " " + v2.b + " " + v2.c); 
+        // even c instead of v2.c will work as c is static
     }
 }
 
 ```
+
 Output:
+
 ```bash
 java VarCheck
 1 2 6
@@ -65,4 +69,3 @@ java VarCheck
 ---
 
 ## Static and Instance Methods
-
