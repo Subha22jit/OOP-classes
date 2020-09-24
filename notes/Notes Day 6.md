@@ -46,6 +46,9 @@ In Java there is no garbage value concept, that's why we can't use local variabl
 Variables declared within class but outside of the body of any methods are called instance variables. It is not declared as `static`. It has one copy per object. Java compiler assign default value to the instance variables. These can be accessed only via an object - directly or indirectly.  
 Accessing directly: `new Box().w`;
 
+### Static variables
+
+Left for next day
 
 ```java
 class Box{
@@ -59,3 +62,13 @@ class Box{
     }
 }
 ```
+
+--- 
+### Lab Work
+#### Assignment 2 - 4 to 9
+
+- Create a class First, make instance variable [int x], method [void show()] and also put main method inside that class and use the instance variable and method from main. [Code](../codes/First.java)
+- Create a class; make its instance variable and method. Use them from main, declared
+in different class. [Code](../codes/Second.java)
+- Create a class; put a method inside this class which will return a class reference return
+same class and/or different class object. [Code](../codes/ClassRef.java)
