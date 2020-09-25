@@ -112,3 +112,12 @@ public class DirCheck {
 #### Why static methods can't acess instance variables and instance methods directly?
 
 #### Why main method is static?
+
+---
+
+## Lab Work:
+
+1. Write a program to demonstrate call by value in java [Code](../codes/CallByValue.java)
+2. Write a program to demonstrate call by reference in java [Code](../codes/CallByReference.java)
+3. Write a program to create a clone of an object using copy constructor [Code](../codes/CopyConstructor.java)
+4. Create a Student class of n students having name and roll number and subjects. [Code](../codes/ClassRoom.java)
