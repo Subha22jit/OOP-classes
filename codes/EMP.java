@@ -10,7 +10,10 @@ public class EMP {
     }
 
     public String toString() {
-        return String.format("[%s Class] Name: %s, ID: %d", this.getClass().getSimpleName(), this.name, this.id);
+        return String.format("[%s Class] Name: %s, ID: %d",
+                this.getClass().getEnclosingClass() == null ? this.getClass().getSimpleName()
+                        : this.getClass().getEnclosingClass().getSimpleName(),
+                this.name, this.id);
     }
 
     public static void main(String[] args) {
