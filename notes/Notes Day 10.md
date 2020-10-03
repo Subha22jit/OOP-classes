@@ -32,3 +32,11 @@ non-static keyword, can't be accessed from static context. helps solve ambiguity
 - Used to invoke super class constructor (Constructor Chaining)
 
 First line in a constructor block is `super();` if we don't specify explicitly. Java compiler provides this if not specified.
+
+It is used to invoke parent class methods.
+
+---
+
+# Day 11 Lab Work:
+
+[Rectangle.java](./../codes/Rectangle.java)
