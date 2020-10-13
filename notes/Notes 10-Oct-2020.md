@@ -11,34 +11,42 @@ NO, constructors cannot be overridden, so they cannot be set to final.
 
 ## Abstract Class:
 
- ```java
-  class Rectangle extends Figure {
-      Rectangle(double a, double b) {
-          super(a, b);
-      }
+Any class that contains one or more abstract methods, so here the Figure class contains one abstract method `area()`, must also be declared abstract.  
+The general form to declare method as abstract is
 
-      double area() {
-          return this._a * this._b;
-      }
+```java
+abstract return-type method-name(parameter-list);
+```
 
-      public static void main(String[] args) {
-          Rectangle r = new Rectangle(2, 3);
-          System.out.println(r.area());
-      }
-  }
+The class who inherits and abstract class either will override the abstract method or itself declare as abstract.
 
-  abstract class Figure {
-      double _a, _b;
+```java
+ class Rectangle extends Figure {
+     Rectangle(double a, double b) {
+         super(a, b);
+     }
 
-      Figure(double a, double b) {
-          this._a = a;
-          this._b = b;
-      }
+     double area() {
+         return this._a * this._b;
+     }
 
-      abstract double area();
-  }
-  ```
+     public static void main(String[] args) {
+         Rectangle r = new Rectangle(2, 3);
+         System.out.println(r.area());
+     }
+ }
 
+ abstract class Figure {
+     double _a, _b;
+
+     Figure(double a, double b) {
+         this._a = a;
+         this._b = b;
+     }
+
+     abstract double area();
+ }
+```
 
 ---
 
