@@ -43,4 +43,5 @@ class Animal {...}
 class Dog extends Animal implements Pet {...}
 ```
 
->Difference between abstract classes and interface
+> - Difference between abstract classes and interface?  
+> - giWhen to use abstract class and when to use interface?
