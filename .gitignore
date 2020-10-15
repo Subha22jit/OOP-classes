@@ -3,3 +3,4 @@
 *.c
 RefCheck.java
 /codes/testing/*
+*.log
