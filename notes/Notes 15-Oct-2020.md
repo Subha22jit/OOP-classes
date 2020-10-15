@@ -1,0 +1,3 @@
+>**Explain the meaning of each token of `public static void main(String[] args)`**  
+- `public`: Access Specifier. The `main()` method must be public because it is called from out outside of the class. It is called by JVM.
+- `static`: The `main()` must be static so that without creating any instance, JVM can call it. If the main method was not declared static, then JVM has to create an instance of the class having the `main()`. If the `main()` is static, then accessing without object is possible.
