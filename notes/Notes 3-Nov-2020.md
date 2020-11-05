@@ -23,3 +23,7 @@ We can't make top level class as static because all top level classes are by def
 - Outer class cannot have access of nested class members directly. 
 - A nested class can be declared as `private`, `default`, `protected` and `public`.
 - If outer class is declared as `private` then compiler will complain that private is not allowed here.
+
+#### Non Static Nested Class: features:
+- Non static nested class have direct access to the other members of the enclosing class even if they are declared as private.
+- They cannot have static members.
