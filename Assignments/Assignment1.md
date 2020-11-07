@@ -67,13 +67,14 @@ Roll: **67**
         }
     }
   ```
-  Output: 
+  Output:  
   ```bash
   > java Add.java
   First number: 1
   Second number: 2
   3
   ```
+
 ---
 #### **2. Write a program to find Area and Circumference of Cylinder Using Constructors - Keyboard Input or Command Line Input**
 
@@ -114,6 +115,7 @@ Output:
   Surface Area: 87.96
   Volume: 62.83
   ```
+
 ---
 #### **3. Write a program to find Area and Volume of Cone Using Constructors - Keyboard Input or  Command Line Input.**
 ```java
@@ -153,6 +155,7 @@ Output:
   Surface Area: 46.40
   Volume: 20.94
   ```
+
 ---
 #### **4. Create a class First, make instance variable `int x`, method `void show()` and also put `main()` method inside that class and use the instance variable and method from `main()`.**
 ```java
@@ -176,6 +179,7 @@ Output:
   > java First.java
   1
 ```
+
 ---
 #### **5. Create a class; make its instance variable and method. Use them from `main()`, declared in different class.**
 ```java
@@ -202,6 +206,7 @@ Output:
 > java Second.java
 2
 ```
+
 ---
 #### **6. Create a class, make method inside it and pass object as parameter of this method. a) pass  same class’s object, b) pass different class’s object**
 ```java
@@ -230,6 +235,7 @@ Output:
 First@76a4d6c
 Second@517cd4b
 ```
+
 ---
 #### **7. Create a class; put a method inside this class which will return a class reference return  same class and/or different class object.**
 ```java
@@ -267,6 +273,7 @@ ROOT ClassRef@1b68b9a4 FROM class ClassRef
 GEN-1 ClassRef@4f9a3314 FROM class ClassRef
 GEN-2 TClass@3b2c72c2 FROM class TClass  
 ```
+
 ---
 #### **8. Write a JAVA Program to make a Student class with proper attributes like roll no, name,  stream, and college.**
 ```java
@@ -319,6 +326,7 @@ Stream: CSE
 College: AoT
 
 ```
+
 ---
 #### 9. Design a class to represent a Bank Account. Include the following things:
 > **Fields**  
@@ -382,6 +390,7 @@ Output:
 Name: Sayan Kundu
 Balance: 103000
 ```
+
 --- 
 
 Made with markdown and love.  
