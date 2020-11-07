@@ -3,21 +3,23 @@
 
 ---
 ### **Name: Sayan Kundu**  
-Roll: *67*  
-*CSE* Department, *5th* Semester
+Roll: **67**  
+
+**CSE** Department, **5th** Semester
 
 ---
 #### **1. Add two numbers by taking input using Command Line input, Scanner class and  BufferedReader class.**
 - Command Line input:
   ```java
-  class Add{
-      public static void main(String[] args) {
-          int a = Integer.parseInt(args[0]);
-          int b = Integer.parseInt(args[1]);
-          int c = a + b;
-          System.out.println(c);
-      }
-  }
+      class Add {
+        public static void main(String[] args) {
+            int a = Integer.parseInt(args[0]);
+            int b = Integer.parseInt(args[1]);
+            int c = a + b;
+            System.out.println(c);
+        }
+    }
+
   ```
   Output: 
   ```bash
@@ -26,19 +28,20 @@ Roll: *67*
   ```
 - Scanner class:
   ```java
-  import java.util.Scanner;
-  class Add{
-      public static void main(String[] args) {
-          int a,b,sum;
-          Scanner sc = new Scanner(System.in);
-          System.out.print("First number: ");
-          a=sc.nextInt();
-          System.out.print("Second number: ");
-          b=sc.nextInt();
-          sum=a+b;
-          System.out.println(sum);
-      }
-  }
+    import java.util.Scanner;
+
+    class Add {
+        public static void main(String[] args) {
+            int a, b, sum;
+            Scanner sc = new Scanner(System.in);
+            System.out.print("First number: ");
+            a = sc.nextInt();
+            System.out.print("Second number: ");
+            b = sc.nextInt();
+            sum = a + b;
+            System.out.println(sum);
+        }
+    }
   ```
   Output: 
   ```bash
@@ -49,19 +52,20 @@ Roll: *67*
   ```
 - BufferedReader class:
   ```java
-  import java.io.*;
-  class Add{
-      public static void main(String[] args) {
-          int a,b,sum;
-          BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-          System.out.print("First number: ");
-          a= Integer.parseInt(br.readLine());
-          System.out.print("Second number: ");
-          b= Integer.parseInt(br.readLine());
-          sum=a+b;
-          System.out.println(sum);
-      }
-  }
+    import java.io.*;
+
+    class Add {
+        public static void main(String[] args) {
+            int a, b, sum;
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("First number: ");
+            a = Integer.parseInt(br.readLine());
+            System.out.print("Second number: ");
+            b = Integer.parseInt(br.readLine());
+            sum = a + b;
+            System.out.println(sum);
+        }
+    }
   ```
   Output: 
   ```bash
@@ -378,3 +382,7 @@ Output:
 Name: Sayan Kundu
 Balance: 103000
 ```
+--- 
+
+Made with markdown and love.  
+Github Link https://github.com/flametron/OOP-classes/blob/master/Assignments/Assignment1.md
