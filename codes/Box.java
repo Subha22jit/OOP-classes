@@ -20,15 +20,15 @@ public class Box {
     }
 
     double getVolume() {
-        return isCube ? Math.pow(this.h, 3) : Math.PI * Math.pow(this.r, 2) * (this.h / 3);
+        return this.isCube ? Math.pow(this.h, 3) : Math.PI * Math.pow(this.r, 2) * (this.h / 3);
     }
 
     public static void main(String[] args) {
         Box cube = new Box(2);
         Box cone = new Box(2, 3);
-        System.out.println("Cube : " + cube.getVolume());
+        System.out.println("Cube : " + String.format("%.2f", cube.getVolume()));
         System.out.println("Cone : " + String.format("%.2f", cone.getVolume()));
-        System.out.println("Nulled : " + cube.getVolume(true));
+        System.out.println("Nulled : " + String.format("%.2f", cone.getVolume(true)));
 
     }
 }
