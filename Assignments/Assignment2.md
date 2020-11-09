@@ -278,4 +278,5 @@ Showing from Slave #3 Slave3
 ---
 
 Made with `Code`, `Love` and `Markdown`  
+By [Sayan Kundu](https://github.com/flametron/)  
 Github Link: https://github.com/flametron/OOP-classes/blob/master/Assignments/Assignment2.md
