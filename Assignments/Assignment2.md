@@ -191,7 +191,8 @@ Output:
 > java .\EMP.java
 [EMP Class] Name: Sayan Kundu, ID: 1
 [Scientist Class] Name: Sayan Kundu, ID: 1 > [Scientist Class] No. of publications: 999999, Experience: Expert
-[Dscientist Class] Name: Sayan Kundu, ID: 1 > [Dscientist Class] No. of publications: 999999, Experience: Expert > [Dscientist Class] Award: Professional Scientist
+[Dscientist Class] Name: Sayan Kundu, ID: 1 > [Dscientist Class] No. of publications: 999999, Experience: Expert >
+[Dscientist Class] Award: Professional Scientist
 ```
 
 ---
@@ -255,7 +256,7 @@ class Slave3 extends Master {
 ```
 
 Outputs:  
-Answer 5:  
+Run for question 5:  
 
 ```bash
 > java .\ShowMe.java 5
@@ -264,7 +265,7 @@ Showing from Slave #1 Slave1
 Showing from Slave #2 Slave2
 ```
 
-Answer 6:
+Run for question 6:
 
 ```bash
 > java .\ShowMe.java 6
