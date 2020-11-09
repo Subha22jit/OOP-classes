@@ -1,4 +1,4 @@
-# Lab Assignment 1
+# Lab Assignment 2
 
 ## Object Oriented Programming
 
