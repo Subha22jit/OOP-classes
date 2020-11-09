@@ -274,3 +274,8 @@ Showing from Slave #1 Slave1
 Showing from Slave #2 Slave2
 Showing from Slave #3 Slave3
 ```
+
+---
+
+Made with `Code`, `Love` and `Markdown`  
+Github Link: https://github.com/flametron/OOP-classes/blob/master/Assignments/Assignment2.md
