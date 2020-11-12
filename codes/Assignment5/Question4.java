@@ -12,8 +12,13 @@ public class Question4 {
                 super.display();
                 System.out.println("Showing 2");
             }
+
+            void d2() {
+                System.out.println("SHOWING CUSTOM");
+            }
         };
         s.display();
+        // new Question4$2().d2();
     }
 }
 
