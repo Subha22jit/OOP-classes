@@ -11,8 +11,9 @@ public class Question2 {
             try {
                 System.out.println(arr[4]);
             } catch (ArrayIndexOutOfBoundsException e2) {
-                System.out.printf("Array Index out of Bound in : Line %s, %s:%s%n", e2.getStackTrace()[0].getLineNumber(),
-                        e2.getStackTrace()[0].getClassName(), e2.getStackTrace()[0].getMethodName());
+                System.out.printf("Array Index out of Bound in : Line %s, %s:%s%n",
+                        e2.getStackTrace()[0].getLineNumber(), e2.getStackTrace()[0].getClassName(),
+                        e2.getStackTrace()[0].getMethodName());
             }
         } catch (Exception e) {
             System.out.printf("ERROR in : Line %s, %s:%s%n", e.getStackTrace()[0].getLineNumber(),
