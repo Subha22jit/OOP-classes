@@ -80,7 +80,7 @@ EXIT: 0
 
 #### **3. Create a class with variable(s) and method(s) (all will be default accessed) under package pOne. Now create a class under package pTwo, which is subclass of firstly created class. In the method here (i.e. class of pTwo) call variable(s) and method(s) of previous class (i.e. class of pOne). If errors come, rectify them. Now from Main (under working directory) access second class’s members.**
 
-./pOne/C1.java
+.\pOne\C1.java
 
 ```java
 package pOne;
@@ -94,7 +94,7 @@ public class C1 {
 }
 ```
 
-./pTwo/C2.java
+.\pTwo\C2.java
 
 ```java
 package pTwo;
@@ -111,7 +111,7 @@ public class C2 extends C1 {
 }
 ```
 
-./MainRunner.java
+.\MainRunner.java
 
 ```java
 public class MainRunner {
@@ -137,15 +137,63 @@ EXIT: 0
 
 #### **4. Create an interface containing three methods, in a package ‘pkgOne’. Implement the interface from a class under package pkgTwo. From main, under working directory, create object of the class and call methods of interface.**
 
+.\pkgOne\intface.java
+
 ```java
-code
+package pkgOne;
+
+public interface intface{
+    void show1();
+    void show2(int a);
+    void show3();
+}
+```
+
+.\pkgTwo\implementation.java
+
+```java
+package pkgTwo;
+
+public class implementation implements pkgOne.intface {
+    public void show1() {
+        System.out.println("SHOWING ONE");
+    }
+
+    public void show2(int a) {
+        System.out.println(a);
+    }
+
+    public void show3() {
+        System.out.println("SHOWING LAST");
+    }
+}
+```
+
+.\MainRunner.java
+
+```java
+public class MainRunner {
+    public static void main(String[] args) {
+        pkgTwo.implementation imp = new pkgTwo.implementation();
+        imp.show1();
+        imp.show2(29);
+        imp.show3();
+    }
+}
 ```
 
 Output:  
 
 ```bash
-> java .\maintesting.java 
-op
+> java .\MainRunner.java
+SHOWING ONE
+29
+SHOWING LAST
+EXIT: 0
 ```
 
 ---
+
+Made with `Code`, `Love` and `Markdown`  
+By [Sayan Kundu](https://github.com/flametron/)  
+Github Link: https://github.com/flametron/OOP-classes/blob/master/Assignments/Assignment4.md
