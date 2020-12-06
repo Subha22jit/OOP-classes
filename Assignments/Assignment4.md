@@ -64,10 +64,10 @@ class sup {
 Output:  
 
 ```bash
-> java .\maintesting.java 
+> java .\maintesting.java
 Super Static Block
 Sub Static Block before main()
-Sub Static Block after main() 
+Sub Static Block after main()
 Sub class Main()
 Super Instance Block
 Super Constructor
