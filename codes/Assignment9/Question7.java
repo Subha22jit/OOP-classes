@@ -12,7 +12,7 @@ public class Question7 {
 class TesterClass {
     void f() throws SecondException {
         try {
-            this.g();
+            g();
         } catch (FirstException e) {
             System.out.println(e);
             throw new SecondException("Second");

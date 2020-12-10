@@ -168,7 +168,7 @@ import java.util.Arrays;
 
 public class Question5 {
 
-    // Mergesort karon bhalo legeche eta sob theke beshi sesky sorting
+    // Mergesort karon amar bhalo legeche eta besh
     // In place korbe eta...
     public static void mergeSort(String[] a, int from, int to) {
         if (from == to) {

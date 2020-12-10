@@ -3,7 +3,7 @@ public class Question6 {
         int salary = 1000;
         try {
             if (salary < 10000)
-                throw new PayOutOfBoundsException("TAKA NEI");
+                throw new PayOutOfBoundsException("Tor taka nei");
         } catch (PayOutOfBoundsException e) {
             System.out.println(e);
         }

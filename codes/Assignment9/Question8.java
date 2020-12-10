@@ -1,3 +1,4 @@
+package test1;
 public class Question8 {
     public static void main(String[] args) {
         String str = null;
@@ -9,7 +10,7 @@ public class Question8 {
             start = Integer.parseInt(args[1]);
             end = Integer.parseInt(args[2]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.printf("Input Format: ./java %s <string> <start> <end>%n", Question8.class.getSimpleName());
+            System.out.printf("Input Format: java .\\%s <string> <start> <end>%n", Question8.class.getSimpleName());
             System.exit(0);
         }
 
