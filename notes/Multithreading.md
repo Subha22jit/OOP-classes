@@ -30,3 +30,45 @@ diagram needed to be added
 
 1. Extends Thread
 2. Implements Runnable
+
+
+## Can you start a thread twice? Explain with code.
+
+No, we get `java.lang.IllegalThreadStateException`. 
+```java
+public class testing extends Thread {
+
+    testing(String name) {
+
+        super(name);
+    }
+
+    public void run() {
+        Thread t = Thread.currentThread();
+        System.out.println(t);
+    }
+
+    public static void main(String[] args) {
+        // testing t0 = new testing("FI");
+        testing t = new testing("FIRST");
+        t.start();
+        try {
+            t.start();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+```
+```bash
+> java .\testing.java
+java.lang.IllegalThreadStateException
+Thread[FIRST,5,main]
+EXIT: 0
+```
+
+## Thread priority
+
+There are three priority value of a thread class. One is MAX_PRIORITY (10), one is MIN_PRIORITY (1) and the last one is NORM_PRIORITY (5); and we can set any priority value from 1 to 10. We can set priority value using `setPriority(int priority)`.  
+However a Thread priority always doesn't gurentee the order of execution.  
+
