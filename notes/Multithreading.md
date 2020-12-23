@@ -72,3 +72,29 @@ EXIT: 0
 There are three priority value of a thread class. One is MAX_PRIORITY (10), one is MIN_PRIORITY (1) and the last one is NORM_PRIORITY (5); and we can set any priority value from 1 to 10. We can set priority value using `setPriority(int priority)`.  
 However a Thread priority always doesn't gurentee the order of execution.  
 
+
+## Synchronization:
+
+When two or more threads needs to access a common/shared resource, there needs to be some way to ensure that only one process access the resource at a time. The process by which it is achieved is called Synchronization.  
+Key to synchronization is the concept of Monitor (aka Semaphore). Only one thread can own a monitor at a given time. As long as the thread holds the monitor, no other thread can enter the synchronizated section also called critical section of code.  
+
+There are two ways to achieve Synchronization in java:
+- by `synchronized` method.
+  ```java
+  synchronized void calculations(){
+      //stuff to do in function
+  }
+  ```
+- by `synchronized` statement or block.
+  ```java
+  synchronized(object){
+      //statements in block
+  }
+  ```
+  
+
+## Difference between sleep and join.
+
+## Explain isAlive and join().
+
+We often want the main thread to stop last. This can be accomplished by calling sleep method on main thread with long enough delay to ensure that all child threads terminates prior the main thread, but how one thread will come to know when another thread has ended? **NEVER APPLY `.join()` ON MAIN THREAD**.
