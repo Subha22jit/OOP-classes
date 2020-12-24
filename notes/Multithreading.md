@@ -98,3 +98,14 @@ There are two ways to achieve Synchronization in java:
 ## Explain isAlive and join().
 
 We often want the main thread to stop last. This can be accomplished by calling sleep method on main thread with long enough delay to ensure that all child threads terminates prior the main thread, but how one thread will come to know when another thread has ended? **NEVER APPLY `.join()` ON MAIN THREAD**.
+
+
+## Inter-Thread communication
+
+- Polling System
+  Polling is a process in which the computer waits for an external device to check for it's readiness. 
+Usage of `wait()` and `notify()`  
+`wait()` - It tells the calling thread to give up the monitor and go to sleep until some other thread enters the same monitor and calls `notify()`  
+`notify()` - It wakes up a thread that called wait on the same object.  
+
+`wait()` and `notify()` must be called from a synchronized context.
