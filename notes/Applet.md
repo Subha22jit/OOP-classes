@@ -14,3 +14,6 @@ Applet Lifecycle:
 `init()` called only once -> then `start()` -> then `paint()` Called automatically.  
 To call `stop()` we need to perform some action, like clicking the minimize button. Then if we restore the window again, `start()` will be called then `paint()`.  
 If we click on Close button, then applet calls `destroy()`. `destroy()` is called only once. Before callind `destroy()`, `stop()` is called to free up any resources it holds.
+
+- What are the minimum attributes required for the `<applet></applet>` tags?
+  code, height, width
