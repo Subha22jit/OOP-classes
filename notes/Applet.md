@@ -17,3 +17,6 @@ If we click on Close button, then applet calls `destroy()`. `destroy()` is calle
 
 - What are the minimum attributes required for the `<applet></applet>` tags?
   code, height, width
+
+- Why applet classes need to be public?
+  Because it is accessed from outside by AppletViewer or Browser.
