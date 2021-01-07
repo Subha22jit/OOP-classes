@@ -1,4 +1,3 @@
-package test1;
 public class Question8 {
     public static void main(String[] args) {
         String str = null;
