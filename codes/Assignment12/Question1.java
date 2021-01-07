@@ -5,11 +5,13 @@ import java.awt.event.*;
 public class Question1 extends JFrame implements ActionListener {
     JButton b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, add, minus, mult, div, mod, equal;
     JTextArea screen;
+    String output = "";
+    JFrame f;
 
     Question1() {
-        String output = "CALCULATOR READY";
-        JFrame f = new JFrame();
-        screen = new JTextArea(output);
+        f = new JFrame("Cool Calculator");
+        f.setDefaultCloseOperation(3);
+        screen = new JTextArea(this.output);
         screen.setBounds(10, 10, 230, 40);
         b1 = new JButton("1");
         b1.setBounds(10, 60, 50, 50);
@@ -64,10 +66,63 @@ public class Question1 extends JFrame implements ActionListener {
         f.setSize(270, 400);
         f.setLayout(null);
         f.setVisible(true);
+        b1.addActionListener(this);
+        b2.addActionListener(this);
+        b3.addActionListener(this);
+        b4.addActionListener(this);
+        b5.addActionListener(this);
+        b6.addActionListener(this);
+        b7.addActionListener(this);
+        b8.addActionListener(this);
+        b9.addActionListener(this);
+        b0.addActionListener(this);
+        add.addActionListener(this);
+        minus.addActionListener(this);
+        mult.addActionListener(this);
+        div.addActionListener(this);
+        mod.addActionListener(this);
+        equal.addActionListener(this);
     }
 
     public void actionPerformed(ActionEvent e) {
+        this.output = this.output + getCommand(e.getSource());
+        this.screen.setText(this.output);
+    }
 
+    private String getCommand(Object ob) {
+        if (ob == b1)
+            return "1";
+        else if (ob == b2)
+            return "2";
+        else if (ob == b3)
+            return "3";
+        else if (ob == b4)
+            return "4";
+        else if (ob == b5)
+            return "5";
+        else if (ob == b6)
+            return "6";
+        else if (ob == b7)
+            return "7";
+        else if (ob == b8)
+            return "8";
+        else if (ob == b9)
+            return "9";
+        else if (ob == b0)
+            return "0";
+        else if (ob == add)
+            return "+";
+        else if (ob == minus)
+            return "-";
+        else if (ob == div)
+            return "/";
+        else if (ob == mult)
+            return "*";
+        else if (ob == mod)
+            return "%";
+        else {
+            return "=";
+        }
     }
 
     public static void main(String[] args) {
