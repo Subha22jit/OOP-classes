@@ -39,3 +39,9 @@ FlowLayout -> Default Layout
 java.awt  
 A layout manager arrnages component within a window using some specific algorithm.  
 FlowLayout manages a layout which is similar to how words flow in a text editor, that is, from upper left corner, then left to right, and from top to bottom.
+
+
+### Questions:
+
+1. Create an Swing/Applet to add two integer and display result. Two numbers can be accepted through keyboard.
+2. Develop an Applet that receives 3 Numeric values as input from the user and then display the largest of the three on the screen. 

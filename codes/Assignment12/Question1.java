@@ -85,44 +85,9 @@ public class Question1 extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        this.output = this.output + getCommand(e.getSource());
+        JButton b = (JButton) e.getSource();
+        this.output = this.output + b.getText();
         this.screen.setText(this.output);
-    }
-
-    private String getCommand(Object ob) {
-        if (ob == b1)
-            return "1";
-        else if (ob == b2)
-            return "2";
-        else if (ob == b3)
-            return "3";
-        else if (ob == b4)
-            return "4";
-        else if (ob == b5)
-            return "5";
-        else if (ob == b6)
-            return "6";
-        else if (ob == b7)
-            return "7";
-        else if (ob == b8)
-            return "8";
-        else if (ob == b9)
-            return "9";
-        else if (ob == b0)
-            return "0";
-        else if (ob == add)
-            return "+";
-        else if (ob == minus)
-            return "-";
-        else if (ob == div)
-            return "/";
-        else if (ob == mult)
-            return "*";
-        else if (ob == mod)
-            return "%";
-        else {
-            return "=";
-        }
     }
 
     public static void main(String[] args) {
