@@ -29,26 +29,24 @@ class InterThread {
         notify();
     }
 
-    public static void main(String args[]){
-    System.out.println("Press Control-C to stop the thread");
-    InterThread q = new InterThread();package codes.Assignment10;
-    
-    public class InterThread {
-        Thread t1=new Thread(){
-			public void run(){
-				int i = 0;
-              			while(true)
-                        		q.put(i++); //0
-			}
-		};
-		Thread t2=new Thread(){
-			public void run(){
-              			while(true)
-                         		q.get();
-			}
-		};
-   		t1.start();
-		t2.start();
-	}
-}
+    public static void main(String args[]) {
+        System.out.println("Press Control-C to stop the thread");
+        InterThread q = new InterThread();
+
+        Thread t1 = new Thread() {
+            public void run() {
+                int i = 0;
+                while (true)
+                    q.put(i++); // 0
+            }
+        };
+        Thread t2 = new Thread() {
+            public void run() {
+                while (true)
+                    q.get();
+            }
+        };
+        t1.start();
+        t2.start();
+    }
 }
