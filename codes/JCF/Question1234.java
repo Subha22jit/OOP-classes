@@ -16,5 +16,8 @@ public class Question1234 {
         System.out.println(a);
         Collections.shuffle(a);
         System.out.println(a);
+        for (int i : a) {
+            System.out.println(i);
+        }
     }
 }
