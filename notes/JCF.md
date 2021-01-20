@@ -12,7 +12,7 @@ The Root Interface in the collection hierarchy is `Collection<E>`. It is an *int
 Generic means more type safety, it adds the compile time safety to the collections framework.  
 And the **E** denotes **Element's DataType**.  
 
-### Benefit of JCF:
+#### Benefit of JCF:
 
 1. Reduces programming effort by providing useful datastructures and algorithms.
 2. Increase program speed and quality.
@@ -45,3 +45,23 @@ Vectors have growth formula:
 Vectors are Synchronized, but ArrayList is not.  
 If multiple threads access ArrayList concurrently, then we must synchronize the block.  
 Performance of ArrayList is better than Vector.
+
+
+#### LinkedList:
+
+- accessing an element in ArrayList is faster compared to LinkedList
+- insertion or deletion of elements in LinkedList is faster compared to ArrayList, except the last element.
+
+Features of LinkedList:
+
+- LinkedList implements List, Deque and Queue interface
+- as LinkedList implements Deque so, add, get, remove operation can be performed from rear and front ends. 
+
+
+#### HashSet:
+
+- Order of the elements in HashSet depends on the internal hash function.  
+- HashSet class is backed by Hashtable which offers constant time performance for the basic operations add, remove, etc.   
+- HashSet has 3 types of constructors.
+
+Load Factor is a measure of how full the hash set is allowed to get before it's capacity automatically increases.
