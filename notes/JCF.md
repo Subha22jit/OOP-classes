@@ -65,3 +65,23 @@ Features of LinkedList:
 - HashSet has 3 types of constructors.
 
 Load Factor is a measure of how full the hash set is allowed to get before it's capacity automatically increases.
+
+
+HashSet, it internally creates a HashMap and if we insert an element into this HashSet using add() method, it actually call put() method on internally created HashMap object with element we have specified as it’s key and constant Object called “PRESENT” as it’s value. So we can say that a Set achieves uniqueness internally through HashMap.
+
+1. If map.put(key, value) returns null, then the statement "map.put(e, PRESENT) == null" will return true and element is added to the HashSet acked internally by HashMap.
+
+2. If map.put(key, value) returns old value of the key, then the statement "map.put(e, PRESENT) == null" will return false and element is not dded to the HashSet backed internally by HashMap.
+
+Logic of insertion into a hash map:
+
+1. int hv = key.hashCode(); // Return  hash code
+2. int h = hash(hv); // To avoid colision
+3. int indexFor(int h, int L);
+
+Why 16?
+```java
+int indexFor(int h,int L){
+  return h&(L-1);
+}
+```
