@@ -2,12 +2,7 @@ import java.util.*;
 
 public class Question2 {
     public static void main(String[] args) {
-        LinkedList<Integer> LL = new LinkedList<>();
-        LL.add(1);
-        LL.add(2);
-        LL.add(3);
-        LL.add(4);
-        LL.add(5);
+        LinkedList<Integer> LL = new LinkedList<>(Arrays.asList(new Integer[] { 1, 2, 3, 4, 5 }));
         System.out.println(LL);
         LL.removeFirst();
         System.out.println(LL);
