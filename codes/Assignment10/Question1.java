@@ -17,6 +17,7 @@ public class Question1 extends Thread {
     }
 
     public static void main(String[] args) {
+
         Question1 q1 = new Question1("Amar Thread");
         System.out.println(Thread.currentThread().getName());
         System.out.println("BAire theke naam: " + q1.getName());
