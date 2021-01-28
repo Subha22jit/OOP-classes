@@ -121,8 +121,23 @@ public class Question4 {
         HS1.add(30);
         HS2.add(10);
         HS2.add(20);
-        HS1.removeIf(n -> (!HS2.contains(n)));
+        HS2.add(40);
+        HashSet<Integer> HS3 = new HashSet<>();
+        HS1.forEach((n) -> {
+            if (HS2.contains(n))
+                HS3.add(n);
+        });
+        HS2.forEach((n) -> {
+            if (HS1.contains(n) && !HS3.contains(n))
+                HS3.add(n);
+        });
+        HS3.forEach((n) -> {
+            HS1.remove(n);
+            HS2.remove(n);
+        });
+        HS3.clear();
         System.out.println(HS1);
+        System.out.println(HS2);
     }
 }
 ```
@@ -131,7 +146,8 @@ Output:
 
 ```bash
 > java .\Question4.java
-[20, 10]
+[30]
+[40]
 EXIT: 0
 ```
 
@@ -226,11 +242,7 @@ public class Question7 {
                 break;
             }
         }
-        for (Integer i : LL2) {
-            // System.out.println(i + " is contained in LL1: " + LL1.contains(i));
-            if (!LL1.contains(i))
-                LL1.add(i);
-        }
+        LL1.addAll(LL2);
         System.out.println(LL1);
     }
 }
@@ -246,11 +258,12 @@ Output:
 [FIRST] Enter a number, or enter 'q' to stop: 3
 [FIRST] Enter a number, or enter 'q' to stop: q
 [SECOND] Enter a number, or enter 'q' to stop: 1
+[SECOND] Enter a number, or enter 'q' to stop: 2
+[SECOND] Enter a number, or enter 'q' to stop: 3
 [SECOND] Enter a number, or enter 'q' to stop: 4
-[SECOND] Enter a number, or enter 'q' to stop: 9
-[SECOND] Enter a number, or enter 'q' to stop: 10
+[SECOND] Enter a number, or enter 'q' to stop: 5
 [SECOND] Enter a number, or enter 'q' to stop: q
-[1, 2, 3, 4, 9, 10]
+[1, 2, 3, 1, 2, 3, 4, 5]
 EXIT: 0
 ```
 

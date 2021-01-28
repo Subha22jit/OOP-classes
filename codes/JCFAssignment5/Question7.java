@@ -22,11 +22,12 @@ public class Question7 {
                 break;
             }
         }
-        for (Integer i : LL2) {
-            // System.out.println(i + " is contained in LL1: " + LL1.contains(i));
-            if (!LL1.contains(i))
-                LL1.add(i);
-        }
+        // for (Integer i : LL2) {
+        // // System.out.println(i + " is contained in LL1: " + LL1.contains(i));
+        // if (!LL1.contains(i))
+        // LL1.add(i);
+        // }
+        LL1.addAll(LL2);
         System.out.println(LL1);
     }
 }
