@@ -85,3 +85,36 @@ int indexFor(int h,int L){
   return h&(L-1);
 }
 ```
+
+
+#### HashMap:
+
+HashMap <Key, Value>  
+Key must be unique  
+Value can be duplicate  
+Whether elements will be stored in sorted order or not depeds on internal hash function.  
+
+For add, delete, get etc, operations time is constant O(1).  
+Initial capacity - 16.  
+Load Factor - 0.75.  
+
+
+#### TreeMap:
+
+Uses Red Black Tree  
+
+- Red Black Tree needs lesser rotation than AVL tree.
+- AVL Stores balance factor in each node which take O(N) extra space.
+- If an application involves more insertion and deletion, then RB performance is better than AVL.
+- AVL is more (rigidly) balanced than RB, hence searching takes less time in AVL than RB.
+
+For Add, Delete, get, etc, operations time is O(log n)  
+TreeMap gurentees order of elements.  
+
+
+#### HashTable (synchronized):
+
+Initial Capacity - 11  
+Load Factor - 0.75  
+Using a prime number (as in 11) as the size of the table, makes collision on the table rows less likely, so inserting is "cheaper".  
+Resize to double or double+1  
