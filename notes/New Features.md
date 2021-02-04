@@ -79,7 +79,6 @@ Before java 8, interfaces could have only abstract methods. The implementation o
 ### static method:
 
 1. Can't override
-2. 
 
 ```java
 Interface I{
@@ -92,3 +91,80 @@ class Test implements I{
         I.go();
     }
 }
+```
+
+### Difference between Abstract class and interface:
+
+1. Interface supports multiple inheritance.
+2. Interface does not have consturctor.
+
+
+### Functional Interface
+
+An Interface that contains exactly one abstract method, but it can have any number of default method, static method, private methods. This is why it is also called Single Abstract Method (SAM) Interface and it provides support for lambda expression and method reference.  
+For example, Runnable interface.  
+Annotation: `@FunctionalInterface`  
+
+```java
+@FunctionalInterface
+interface I{
+	void go();
+	//void show();
+}
+class Main implements I{
+	@Override
+	public void go(){
+		System.out.println("Hello");
+	}
+	public static void main(String a[]){
+		new Main().go();
+	}
+}
+```
+
+Converting to anonymous inner class:
+
+
+```java
+@FunctionalInterface
+interface I{
+	void go();
+	//void show();
+}
+class Main{
+	
+	public static void main(String a[]){
+        I ob = new I(){
+            @Override
+         	public void go(){
+         		System.out.println("Hello");
+         	}
+        };
+		ob.go();
+	}
+}
+```
+
+### Lambda Expressions
+
+`(arguments list) -> {Block of code}`  
+
+1. Compact
+2. Fast
+
+```java
+@FunctionalInterface
+interface I{
+	void go();
+	//void show();
+}
+class Main{
+	
+	public static void main(String a[]){
+        I ob = () -> {
+         		System.out.println("Hello");
+        }; //No new class creation like anonymous inner class
+		ob.go();
+	}
+}
+```
