@@ -168,3 +168,12 @@ class Main{
 	}
 }
 ```
+> How lambda expression brings functional programming concept in java?
+> if the lambda expression matches the parameter type then the lambda expression is turned into a function that implements the same interface
+
+#### Right Shift Operator
+
+`>>`: Signed right shift operator  
+`>>>`: Unsigned right shift operator  
+
+`>>`: Shifts the bits of the number to the right by the number of shift. **The leftmost bits exposed by the shift are filled in with the previous content of the top bit (Most Significant Bit).**  
