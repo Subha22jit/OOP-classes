@@ -174,6 +174,21 @@ class Main{
 #### Right Shift Operator
 
 `>>`: Signed right shift operator  
-`>>>`: Unsigned right shift operator  
+`>>>`: Unsigned right shift operator (Zero fill right shift)  
 
 `>>`: Shifts the bits of the number to the right by the number of shift. **The leftmost bits exposed by the shift are filled in with the previous content of the top bit (Most Significant Bit).**  
+
+`>>>`: This operator is only meaningful for 32 bit value. This operator is useful in pixel based position calculations.  
+
+
+> Why computers represent negative numbers by 2's complement?
+> In 2's complement, -0 and 0 have same representation.
+> It helps in subtraction, by utilizing the same circuit as for addition.
+
+`instanceof`  
+
+> Is java strongly typed or weakly typed?
+> Java is strongly typed, Loosely typed is JavaScript, PERL
+
+The main difference between strongly typed and weakly typed languages is that weakly typed can make conversions between unrelated types implicitly (String and integer are unrelated types), while strongly typed will disallow implicit conversion between unrelated types. Furthermore, strongly typed requires an explicit conversion between related types (integer and short are related types) when there is possibility of data loss.  
+
