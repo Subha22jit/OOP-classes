@@ -192,3 +192,24 @@ class Main{
 
 The main difference between strongly typed and weakly typed languages is that weakly typed can make conversions between unrelated types implicitly (String and integer are unrelated types), while strongly typed will disallow implicit conversion between unrelated types. Furthermore, strongly typed requires an explicit conversion between related types (integer and short are related types) when there is possibility of data loss.  
 
+> Why is there no unsigned concept in java?
+> It is simpler. 
+
+int range is -2147483648 to 2147483647  
+```java
+int i = 2147483647;
+System.out.println(i); // Prints it
+```
+
+```java
+int i = 2147483648;     //ERROR: Number too large
+System.out.println(i);
+```
+
+In Integer class:  
+`int parseUnsignedInt(String number);`
+
+```java
+int i= Integer.parseUnsignedInt("2147483648");
+System.out.println(i); //-2147483648
+```
