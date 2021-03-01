@@ -3,15 +3,7 @@ import java.util.*;
 public class Question3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // BankAccount b = new BankAccount();
-        // System.out.println(b);
-        // b.deposit(1000.00);
-        // b.deposit(1000.250000);
-        // System.out.println(b);
-        // b.withdraw(1000);
-        // System.out.println(b);
-        // System.out.println("CUTSOM WITHDRAW STATUS: " + b.withdraw(2000));
-        // System.out.println(b);
+
         int step = 0;
         BankAccount b1 = null;
         BankAccount b2 = null;
@@ -102,15 +94,12 @@ class BankAccount {
     }
 
     boolean deposit(double amt) {
-        // String tmp = String.format("%.2f", amt);
-        // System.out.println(tmp);
-        // System.out.println(tmp.split(".")[0]);
+
         int r, p;
-        // r = Integer.parseInt(tmp.split(".")[0]);
-        // p = Integer.parseInt(tmp.split(".")[1]);
+
         r = (int) amt;
         p = (int) ((amt * 100) - (r * 100));
-        // System.out.println("DEBUG: " + p);
+
         this.balPaise = this.balPaise + p;
         if (this.balPaise > 100) {
             this.balPaise = this.balPaise % 100;
@@ -126,8 +115,7 @@ class BankAccount {
             return false;
         amt = bal - amt;
         int r, p;
-        // r = Integer.parseInt(tmp.split(".")[0]);
-        // p = Integer.parseInt(tmp.split(".")[1]);
+
         r = (int) amt;
         p = (int) ((amt * 100) - (r * 100));
         this.balPaise = p;
